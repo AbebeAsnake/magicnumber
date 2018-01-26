@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 
 @RestController
 public class MainController {
-    @RequestMapping("/home")
-    public String showWithName(@RequestParam("number") int number)
+    @RequestMapping("/")
+    public String MagicNumber(@RequestParam("number") int number)
     {
         int k = number;
         String val="";
