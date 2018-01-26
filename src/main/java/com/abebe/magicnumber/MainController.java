@@ -11,6 +11,7 @@ public class MainController {
     @RequestMapping("/home")
     public String showWithName(@RequestParam("number") int number)
     {
+        int k = number;
         String val="";
        while(number>1){
             if(number%2==0){
@@ -22,7 +23,7 @@ public class MainController {
             val +=Integer.toString(number)+"<br/>";
         }
      System.out.println(number);
-        return val;
+        return "Starting number:"+k +"<br/>"+val;
     }
 
 }
